@@ -1,12 +1,4 @@
 import Image from "next/image";
-import {
-  FaFacebookF,
-  FaInstagram,
-  FaTiktok,
-  FaWhatsapp,
-  FaYoutube,
-} from "react-icons/fa6";
-import { MdEmail } from "react-icons/md";
 
 const soluciones = [
   {
@@ -122,7 +114,7 @@ export default function Home() {
   className="relative flex min-h-[85vh] items-center overflow-hidden bg-[#061b3a]"
 >
         <video
-          className="absolute inset-0 h-full w-full object-cover scale-105 blur-[1.5px]"
+          className="absolute inset-0 h-full w-full object-cover"
           autoPlay
           muted
           loop
@@ -133,8 +125,8 @@ export default function Home() {
           <source src="/video-cied.mp4" type="video/mp4" />
         </video>
 
-      <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(4,25,60,0.72)_0%,rgba(5,34,73,0.48)_40%,rgba(8,37,84,0.15)_100%)]" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_78%_28%,rgba(32,184,170,0.08),transparent_35%)]" />
+        <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(2,17,42,0.96)_0%,rgba(3,24,55,0.82)_43%,rgba(3,25,58,0.38)_100%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_78%_28%,rgba(32,184,170,0.18),transparent_35%)]" />
 
         <div className="relative z-10 mx-auto w-full max-w-7xl px-5 pb-12 pt-28 sm:px-8 lg:px-10">
           <div className="max-w-4xl">
@@ -428,16 +420,15 @@ export default function Home() {
               forman parte de nuestro ecosistema.
             </p>
 
-           <div className="mt-8 grid gap-3 sm:grid-cols-2">
+           <div className="mt-10 space-y-5 text-slate-600">
+
   <a
     href="https://wa.me/18096596701"
     target="_blank"
     rel="noopener noreferrer"
     className="contact-item"
   >
-    <span className="contact-icon">
-      <FaWhatsapp aria-hidden="true" />
-    </span>
+    <span className="contact-icon">💬</span>
 
     <span>
       <small>WhatsApp</small>
@@ -449,9 +440,7 @@ export default function Home() {
     href="mailto:contacto@somoscied.com"
     className="contact-item"
   >
-    <span className="contact-icon">
-      <MdEmail aria-hidden="true" />
-    </span>
+    <span className="contact-icon">✉️</span>
 
     <span>
       <small>Correo electrónico</small>
@@ -460,14 +449,12 @@ export default function Home() {
   </a>
 
   <a
-    href="https://www.instagram.com/somoscied?igsh=MTNodHZseGFuZmN3Zg=="
+    href="https://www.instagram.com/somoscied"
     target="_blank"
     rel="noopener noreferrer"
     className="contact-item"
   >
-    <span className="contact-icon">
-      <FaInstagram aria-hidden="true" />
-    </span>
+    <span className="contact-icon">📸</span>
 
     <span>
       <small>Instagram</small>
@@ -481,9 +468,7 @@ export default function Home() {
     rel="noopener noreferrer"
     className="contact-item"
   >
-    <span className="contact-icon">
-      <FaFacebookF aria-hidden="true" />
-    </span>
+    <span className="contact-icon">📘</span>
 
     <span>
       <small>Facebook</small>
@@ -497,9 +482,7 @@ export default function Home() {
     rel="noopener noreferrer"
     className="contact-item"
   >
-    <span className="contact-icon">
-      <FaYoutube aria-hidden="true" />
-    </span>
+    <span className="contact-icon">▶️</span>
 
     <span>
       <small>YouTube</small>
@@ -513,15 +496,28 @@ export default function Home() {
     rel="noopener noreferrer"
     className="contact-item"
   >
-    <span className="contact-icon">
-      <FaTiktok aria-hidden="true" />
-    </span>
+    <span className="contact-icon">🎵</span>
 
     <span>
       <small>TikTok</small>
       @somoscied3
     </span>
   </a>
+
+  <a
+    href="https://somoscied.com"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="contact-item"
+  >
+    <span className="contact-icon">🌐</span>
+
+    <span>
+      <small>Sitio web</small>
+      somoscied.com
+    </span>
+  </a>
+
 </div>
           </div>
 
